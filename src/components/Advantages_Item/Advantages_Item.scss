@@ -1,0 +1,22 @@
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        width: 100px;
+        border: 10px solid #00bc77;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    h1 {
+        color: #222;
+
+    }
+
+    p {
+        color: #2C3E50;
+
+    }
+}

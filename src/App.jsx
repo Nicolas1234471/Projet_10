@@ -8,28 +8,19 @@ import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 function App() {
-
-  return (
-    <Router>
-      <div className="app-container">
-          <div className="content-wrap">
-              <Header />
-              <Routes>
-                  <Route
-                      path="/"
-                      element={<Home />}
-                  />
-                  <Route path="/login" element={<Login />} />
-                  <Route
-                      path="/user"
-                      element={<User />}
-                  />
-              </Routes>
-              <Footer />
-          </div>
-      </div>
-    </Router>
-  )
+    return (
+        <Router>
+            <div className="app">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/user" element={<User />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

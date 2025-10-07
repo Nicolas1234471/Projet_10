@@ -1,25 +1,29 @@
-.navbar-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px 5px 20px;
+header {
 
-    img {
-        max-width: 100%;
-        width: 200px;
-    }
+    .header-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px 5px 20px;
 
-    a {
-        text-decoration: none;
-    }
+        img {
+            max-width: 100%;
+            width: 200px;
+        }
 
-    .sign-in-link {
-        color: #2C3E50;
-        font-weight: bold;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    .sign-in-link:hover {
-        text-decoration: underline;
+        .sign-in-link {
+            color: #2C3E50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .sign-in-link:hover {
+            text-decoration: underline;
+        }
     }
 }

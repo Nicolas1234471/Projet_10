@@ -7,7 +7,7 @@ import './home.scss';
 
 function Home({}) {
     return (
-        <div className="banner-advantages-container">
+        <main>
             <Banner />
             <div className="advantages-container">
                 <AdvantagesItem 
@@ -19,7 +19,7 @@ function Home({}) {
                 <AdvantagesItem 
                     iconItem={iconMoney}
                     altImage="Money icon"
-                    title="More savings means higher "
+                    title="More savings means higher rates"
                     description="The more you save with us, the higher your interest rate will be!"
                 />
                 <AdvantagesItem 
@@ -29,7 +29,7 @@ function Home({}) {
                     description="We use top of the line encryption to make sure your data and money is always safe."
                 />
             </div>
-        </div>
+        </main>
     )
 }
 

@@ -22,7 +22,25 @@ header {
             margin-right: 0.5rem;
         }
 
+        .sign-in-link-hidden {
+            display: none;
+        }
+
         .sign-in-link:hover {
+            text-decoration: underline;
+        }
+
+        .sign-out-link {
+            color: #2C3E50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .sign-out-link-hidden {
+            display: none;
+        }
+
+        .sign-out-link:hover {
             text-decoration: underline;
         }
     }

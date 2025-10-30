@@ -13,3 +13,12 @@ body {
     text-align: center;
 
 }
+
+@media screen and (max-width: 920px) {
+    .advantages-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

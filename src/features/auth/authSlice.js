@@ -10,11 +10,12 @@ export const loginUser = createAsyncThunk(
         body: JSON.stringify({ email, password }),
       })
 
-      if (!response.ok) {
-        throw new Error('Identifiants incorrects')
-      }
-
       const data = await response.json()
+
+      if (!response.ok) {
+        const errorMessage = data?.message;
+        return thunkAPI.rejectWithValue(errorMessage);
+      }
       
       sessionStorage.setItem('token', data.body.token)
       thunkAPI.dispatch(getUserProfile())

@@ -1,31 +1,22 @@
 .banner-container {
-    display: flex;
-    flex-direction: row;
+    background-image: url('../../assets/images/bank-tree.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    height: 400px;
     position: relative;
-    max-width: 1920px;
     width: 100%;
-
-    img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        object-position: center 33%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-    }
 
     .advantages-description {
         width: 300px;
         height: 147px;
         position: absolute;
-        top: 38%;
-        right: 3%;
-        transform: translate(0%, -50%);
+        top: 50px;
+        right: 50px;
         background-color: white;
         color: #2C3E50;
-        padding: 32px;
-        margin: 32px;
+        padding: 2rem;
+        margin: 2rem;
         text-align: start;
 
         .big-text {
@@ -37,6 +28,30 @@
         .small-text {
             font-size: 1.2rem;
             margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .banner-container {
+        height: 300px;
+        background-position: 0px -50px;
+
+        .advantages-description {
+            width: 200px;
+            height: auto;
+            position: relative;
+            top: 2rem;
+            right: 0px;
+            margin: 0px auto;
+
+            .big-text {
+                font-size: 1rem;
+            }
+
+            .small-text {
+                font-size: 0.9rem;
+            }
         }
     }
 }

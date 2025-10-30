@@ -18,7 +18,7 @@ function User({}) {
                         Welcome back
                         <br />
                         
-                        {user?.userName || ''}
+                        {user?.userName || ''}!
                     </>    
                     ) : (
                         "Edit user info"

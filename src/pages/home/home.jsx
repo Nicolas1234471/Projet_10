@@ -1,8 +1,8 @@
 import Banner from '../../components/Banner/Banner.jsx';
 import AdvantagesItem from '../../components/Advantages_Item/Advantages_Item.jsx';
-import iconChat from '../../assets/images/icon-chat.png';
-import iconMoney from '../../assets/images/icon-money.png';
-import iconSecurity from '../../assets/images/icon-security.png';
+import iconChat from '../../assets/images/icon-chat.webp';
+import iconMoney from '../../assets/images/icon-money.webp';
+import iconSecurity from '../../assets/images/icon-security.webp';
 import './home.scss';
 
 function Home({}) {

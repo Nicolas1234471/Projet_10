@@ -49,3 +49,16 @@
         }
     }
 }
+
+@media screen and (max-width: 720px) {
+    .account {
+        display: block;
+
+        .account-content-wrapper-cta {
+
+            .transaction-button {
+                width: 100%;
+            }
+        }
+    }
+}

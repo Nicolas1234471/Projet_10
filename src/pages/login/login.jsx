@@ -4,9 +4,9 @@ import LoginForm from '../../components/Login_Form/Login_Form.jsx';
 function Login({}) {
     return (
         <main className="main bg-dark">
-            <LoginForm/>
+            <LoginForm />
         </main>
-    )
+    );
 }
 
 export default Login;

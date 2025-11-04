@@ -1,35 +1,37 @@
 import './user.scss';
-import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import AccountInfos from '../../components/Account_Infos/Account_Infos.jsx';
-import EditForm from '../../components/Edit_Form/Edit_Form.jsx'
+import EditForm from '../../components/Edit_Form/Edit_Form.jsx';
 
 function User({}) {
-    const [editing, setEditing] = useState(false)
+    const [editing, setEditing] = useState(false);
 
-    const user = useSelector((state) => state.auth.user)
+    const user = useSelector((state) => state.auth.user);
 
     return (
         <main className="main bg-dark">
             <div className="user-header">
                 <h1>
                     {!editing ? (
-                    <>
-                        Welcome back
-                        <br />
-                        
-                        {user?.userName || ''}!
-                    </>    
+                        <>
+                            Welcome back
+                            <br />
+                            {user?.userName || ''}!
+                        </>
                     ) : (
-                        "Edit user info"
+                        'Edit user info'
                     )}
                 </h1>
                 {!editing ? (
-                <button className="edit-button" onClick={() => setEditing(true)}>
-                    Edit Name
-                </button>
+                    <button
+                        className="edit-button"
+                        onClick={() => setEditing(true)}
+                    >
+                        Edit Name
+                    </button>
                 ) : (
-                <EditForm setEditing={setEditing}/>
+                    <EditForm setEditing={setEditing} />
                 )}
             </div>
             <AccountInfos
@@ -48,7 +50,7 @@ function User({}) {
                 accountAmountDescription="Available Balance"
             />
         </main>
-    )
+    );
 }
 
 export default User;

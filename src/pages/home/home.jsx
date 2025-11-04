@@ -10,19 +10,19 @@ function Home({}) {
         <main>
             <Banner />
             <div className="advantages-container">
-                <AdvantagesItem 
+                <AdvantagesItem
                     iconItem={iconChat}
                     altImage="Chat icon"
                     title="You are our #1 priority"
                     description="Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes."
                 />
-                <AdvantagesItem 
+                <AdvantagesItem
                     iconItem={iconMoney}
                     altImage="Money icon"
                     title="More savings means higher rates"
                     description="The more you save with us, the higher your interest rate will be!"
                 />
-                <AdvantagesItem 
+                <AdvantagesItem
                     iconItem={iconSecurity}
                     altImage="Shield icon"
                     title="Security you can trust"
@@ -30,7 +30,7 @@ function Home({}) {
                 />
             </div>
         </main>
-    )
+    );
 }
 
 export default Home;

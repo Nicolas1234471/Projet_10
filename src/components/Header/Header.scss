@@ -32,6 +32,10 @@ header {
                 margin-right: 0.5rem;
             }
 
+            .user-link:hover {
+                text-decoration: underline;
+            }
+
             .user-icon {
                 color: #2C3E50;
                 margin-right: 3px;
@@ -44,10 +48,6 @@ header {
                 margin-right: 3px;
                 width: 16px;
                 height: 16px;
-            }
-
-            .user-link:hover {
-                text-decoration: underline;
             }
 
             .sign-in-link {

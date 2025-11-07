@@ -78,7 +78,7 @@ export const editUsername = createAsyncThunk(
                         'Content-Type': 'application/json',
                         Authorization: `Bearer ${token}`,
                     },
-                    body: JSON.stringify({ userName }), // ici on envoie juste username
+                    body: JSON.stringify({ userName }),
                 }
             );
 
